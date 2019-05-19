@@ -21,5 +21,5 @@ for (const p of [new Alexa(), new GoogleAssistant()]) {
     });
 }
 
-let expectedLaunchPrompt = 'Welcome to your smart lock. Would you like to lock your door? check the status of your door?  Or Unlock your door?';
-let expectedLaunchReprompt = 'Please say lock door, status of my door, Or unlock to control your door.'; 
+let expectedLaunchPrompt = 'Welcome to your smart lock. Would you like to lock your door? check the status of your door?  Or Unlock your door?'
+let expectedLaunchReprompt = 'Please say lock door, status of my door, Or unlock to control your door.'

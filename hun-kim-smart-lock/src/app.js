@@ -26,10 +26,10 @@ app.use(
 
 app.setHandler({
     LAUNCH() {
-        let expectedLaunchPrompt = 'Welcome to your smart lock. Would you like to lock your door? check the status of your door?  Or Unlock your door?';
-        let expectedLaunchReprompt = 'Please say lock door, status of my door, Or unlock to control your door.'; 
+        this.$speech.addText('Welcome to your smart lock. Would you like to lock your door? check the status of your door?  Or Unlock your door?')
+        this.$reprompt.addText('Please say lock door, status of my door, Or unlock to control your door.')
 
-        this.ask(expectedLaunchPrompt, expectedLaunchReprompt);
+        this.ask(this.$speech,this.$reprompt);
     },
 
     MyNameIsIntent() {
