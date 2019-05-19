@@ -1,16 +1,16 @@
 {
 	"invocation": "smart lock",
-	"intents": [
-		{
-			"name": "HelloWorldIntent",
-			"phrases": [
-				"hello",
-				"say hello",
-				"say hello world"
-			]
-		},
-		{
-			"name": "LockIntent",
+  "intents": [
+    {
+      "name": "HelloWorldIntent",
+      "phrases": [
+        "hello",
+        "say hello",
+        "say hello world"
+      ]
+    },
+    {
+      "name": "LockIntent",
       "phrases": [
         "{lockStatus}",
         "make the door {lockStatus}",
@@ -20,17 +20,54 @@
         "{lockStatus} this door",
         "{lockStatus} it"
       ],
-			"inputs": [
-				{
-					"name": "lockStatus",
-					"type": {
-						"alexa": "AMAZON.US_FIRST_NAME",
-						"dialogflow": "@sys.given-name"
-					}
-				}
-			]
-		}
-	],
+      "inputs": [
+        {
+          "name": "lockStatus",
+          "type": "lockStatusType"
+
+        }
+      ]
+    }
+  ],
+  "inputTypes": [
+    {
+      "name": "lockStatusType",
+      "values": [
+        {
+          "value": "lock",
+          "synonyms": [
+            "lock it",
+            "secure",
+            "encrypt",
+            "locked",
+            "locking",
+            "safe",
+            "close",
+            "hide",
+            "close lock",
+            "prevent opening"
+          ]
+        },
+        {
+          "value": "unlock",
+          "synonyms": [
+            "unlock it",
+            "unsecure",
+            "insecure",
+            "decrypt",
+            "unlocked",
+            "unlocking",
+            "unsafe",
+            "open",
+            "reveal",
+            "open lock",
+            "allow opening",
+            "allow open"
+          ]
+        }
+      ]
+    }
+  ],
 	"alexa": {
 		"interactionModel": {
 			"languageModel": {

@@ -1,0 +1,114 @@
+[
+	{
+		"data": [
+			{
+				"text": "lockStatus",
+				"userDefined": true,
+				"alias": "lockStatus",
+				"meta": "@lockStatusType"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "make the door ",
+				"userDefined": false
+			},
+			{
+				"text": "lockStatus",
+				"userDefined": true,
+				"alias": "lockStatus",
+				"meta": "@lockStatusType"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "Please ",
+				"userDefined": false
+			},
+			{
+				"text": "lockStatus",
+				"userDefined": true,
+				"alias": "lockStatus",
+				"meta": "@lockStatusType"
+			},
+			{
+				"text": " the door",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "lockStatus",
+				"userDefined": true,
+				"alias": "lockStatus",
+				"meta": "@lockStatusType"
+			},
+			{
+				"text": " the door",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "lockStatus",
+				"userDefined": true,
+				"alias": "lockStatus",
+				"meta": "@lockStatusType"
+			},
+			{
+				"text": " my door",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "lockStatus",
+				"userDefined": true,
+				"alias": "lockStatus",
+				"meta": "@lockStatusType"
+			},
+			{
+				"text": " this door",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "lockStatus",
+				"userDefined": true,
+				"alias": "lockStatus",
+				"meta": "@lockStatusType"
+			},
+			{
+				"text": " it",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	}
+]
