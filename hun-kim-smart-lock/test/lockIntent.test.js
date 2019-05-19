@@ -8,24 +8,24 @@ for (const p of [new Alexa(), new GoogleAssistant()]) {
     const testSuite = p.makeTestSuite();
 
     describe(`PLATFORM: ${p.constructor.name} INTENTS` , () => {
-        test('should return LOCKED status at "LockIntetn"', async () => {
+        test('should return LOCKED status at "LockIntent"', async () => {
             const conversation = testSuite.conversation();
 
-            const lockRequest = await testSuite.requestBuilder.intent('LockIntent', {lockStatus:'lock'});
-            const responseLockRequest = await conversation.send(LockRequest);
+            const lockRequest = await testSuite.requestBuilder.intent('LockIntent', {lockStatus:'lock'});;
+            const responseLockRequest = await conversation.send(lockRequest);
             expect(
-                responseLockRequest.isAsk(expectedLockPrompt)
+                responseLockRequest.isTell(expectedLockPrompt)
             ).toBe(true);
 
         });
 
-        test('should return UNLOCKED status at "LockIntetn"', async () => {
+        test('should return UNLOCKED status at "LockIntent"', async () => {
             const conversation = testSuite.conversation();
 
-            const lockRequest = await testSuite.requestBuilder.intent('LockIntent', { lockStatus: 'unlock' });
-            const responseLockRequest = await conversation.send(LockRequest);
+            const lockRequest = await testSuite.requestBuilder.intent('LockIntent', {lockStatus: 'unlock'});;
+            const responseLockRequest = await conversation.send(lockRequest);
             expect(
-                responseLockRequest.isAsk(expectedUnlockPrompt)
+                responseLockRequest.isTell(expectedUnlockPrompt)
             ).toBe(true);
 
         });
@@ -33,5 +33,4 @@ for (const p of [new Alexa(), new GoogleAssistant()]) {
 }
 
 let expectedLockPrompt = 'Your door is locked'
-
 let expectedUnlockPrompt = 'Your door is unlocked'
